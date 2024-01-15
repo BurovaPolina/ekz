@@ -1,0 +1,6 @@
+import itertools
+arr = [2, 2, 3, 3, 3, 4, 4, 4, 4, 1, 1, 1, 1, 1]
+
+result = max(len(list(v)) for g,v in itertools.groupby(arr))
+
+print(result)
